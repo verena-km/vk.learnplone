@@ -1,12 +1,8 @@
 # -*- coding: utf-8 -*-
 
-# from vk.learnplone import _
 from Products.Five.browser import BrowserView
 from zope.interface import implementer
 from zope.interface import Interface
-
-
-# from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 
 
 class IFormDemoView(Interface):
@@ -15,10 +11,17 @@ class IFormDemoView(Interface):
 
 @implementer(IFormDemoView)
 class FormDemoView(BrowserView):
-    # If you want to define a template here, please remove the template from
-    # the configure.zcml registration of this view.
-    # template = ViewPageTemplateFile('form_demo_view.pt')
 
     def __call__(self):
         # Implement your own actions:
+        self.submitted = False
+
+        form = self.request.form
+        print(form)
+
+        if "Submit" in form:
+            self.submitted = True
+            self.name = form["name"]
+            self.response_text = f"Hi {self.name}! Thank you for using this form."
+
         return self.index()
