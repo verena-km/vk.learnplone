@@ -11,7 +11,6 @@ class IFormDemoView(Interface):
 
 @implementer(IFormDemoView)
 class FormDemoView(BrowserView):
-
     def __call__(self):
         # Implement your own actions:
         self.submitted = False
