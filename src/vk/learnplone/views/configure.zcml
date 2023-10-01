@@ -7,6 +7,15 @@
  <!-- -*- extra stuff goes here -*- -->
 
   <browser:page
+    name="requestparameter"
+    for="*"
+    class=".request_parameter_view.RequestParameterView"
+    template="request_parameter_view.pt"
+    permission="zope2.View"
+    layer="vk.learnplone.interfaces.IVkLearnploneLayer"
+    />
+
+  <browser:page
     name="outputdemo"
     for="*"
     class=".output_demo_view.OutputDemoView"
