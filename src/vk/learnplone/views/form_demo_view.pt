@@ -8,7 +8,7 @@
 >
   <body>
     <metal:block fill-slot="main">
-      <h1>Example for a simple self submitting form</h1>
+      <h1>Example for a view with a simple self submitting form</h1>
 
       <!-- Form Part -->
       <div tal:condition="not: view/submitted">
