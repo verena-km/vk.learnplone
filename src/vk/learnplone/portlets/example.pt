@@ -1,0 +1,16 @@
+<html
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:tal="http://xml.zope.org/namespaces/tal"
+  xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+  tal:omit-tag=""
+>
+  <div class="card portlet" i18n:domain="my-example">
+    <div class="card-header">Greeter</div>
+
+    <div class="card-body">
+      <p>${python:view.message()}</p>
+    </div>
+
+    <div class="card-footer portletFooter"></div>
+  </div>
+</html>
