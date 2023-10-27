@@ -23,6 +23,12 @@
 
   </portlet>
 
+  <assignment category="context"
+              key="/"
+              manager="plone.leftcolumn"
+              name="blubb"
+              type="vk.learnplone.portlets.Example"
+  />
  
   
 </portlets>
