@@ -33,4 +33,15 @@
     layer="vk.learnplone.interfaces.IVkLearnploneLayer"
     />
 
+  <browser:page
+      name="my_file_view"
+      title="Meine Datei-Ansicht"
+      for="plone.app.contenttypes.interfaces.IFile"
+      class="plone.app.contenttypes.browser.file.FileView"
+      template="my_file_view.pt"
+      permission="zope2.View"
+      layer="vk.learnplone.interfaces.IVkLearnploneLayer"
+      menu="plone_displayviews"
+      />
+
 </configure>
