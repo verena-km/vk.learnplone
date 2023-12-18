@@ -6,6 +6,24 @@
   <configure zcml:condition="installed AccessControl.security">
   <!-- -*- extra stuff goes here -*- -->
 
+    <permission
+        id="vk.learnplone.AddMyTypeZopeClass"
+        title="vk.learnplone: Add MyTypeZopeClass"
+    />
+
+
+    <permission
+        id="vk.learnplone.AddMyTypeZope"
+        title="vk.learnplone: Add MyTypeZope"
+    />
+
+
+    <permission
+        id="vk.learnplone.AddMyTypeSuper"
+        title="vk.learnplone: Add MyTypeSuper"
+    />
+
+
 
   </configure>
 

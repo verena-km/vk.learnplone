@@ -3,5 +3,29 @@
   <permissions>
   <!-- -*- extra stuff goes here -*- -->
 
+    <permission name="vk.learnplone: Add MyTypeZopeClass" acquire="True">
+      <role name="Manager"/>
+      <role name="Site Administrator"/>
+      <role name="Owner"/>
+      <role name="Contributor"/>
+    </permission>
+
+
+    <permission name="vk.learnplone: Add MyTypeZope" acquire="True">
+      <role name="Manager"/>
+      <role name="Site Administrator"/>
+      <role name="Owner"/>
+      <role name="Contributor"/>
+    </permission>
+
+
+    <permission name="vk.learnplone: Add MyTypeSuper" acquire="True">
+      <role name="Manager"/>
+      <role name="Site Administrator"/>
+      <role name="Owner"/>
+      <role name="Contributor"/>
+    </permission>
+
+
   </permissions>
 </rolemap>
